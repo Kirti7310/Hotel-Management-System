@@ -1,0 +1,540 @@
+body
+{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin :0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(200, 193, 193);
+}
+
+header
+{
+  background:linear-gradient(to bottom , rgba(0, 0, 0, 0.885),rgb(0, 0, 0));
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top:0;
+  color:white;
+  width: 100%;
+  z-index: 1000;
+  padding: 20px 5px;
+}
+.navbar
+{
+  display: flex;
+  flex-wrap: wrap;
+}
+.navbar ul{
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.navbar  li{
+margin : 0px 10px;
+}
+.navbar a{
+  border-radius: 10px;
+  padding: 10px;
+  color:rgb(244, 239, 239);
+  text-decoration: none;
+  transition: color 0.5s,background-color 0.5s;
+}
+.navbar a:hover{
+  color :rgb(17, 17, 17);
+  background-color: white;
+}
+
+/******welcome page ********/
+
+.content-main-hero
+{
+  background: linear-gradient(to bottom, rgba(23, 23, 23, 0.438), rgba(80, 79, 76, 0.389)), 
+  url('/Hotel-Management-System/images/backgroundimg.jpg') no-repeat center center / cover;
+display: flex;
+  justify-content: center;
+  height: 100vh;
+ align-items: center; 
+ text-align: center; 
+  flex-direction: row;
+}
+
+.scrollbutton
+{
+  padding:20px 60px;
+  border-radius:25px;
+  transition: background-color 0.5s,color 0.5s;
+}
+.scrollbutton:hover
+{
+  background-color: rgba(142, 128, 128, 0.467);
+  color: white;
+  cursor: pointer;
+}
+.content-main-hero h2{
+  color: white;
+  font-size: 60px;
+}
+
+.content
+{
+  padding: 100px 300px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.174);
+}
+
+/*images container **/
+
+.image-cont{
+  display: flex;
+  justify-content: center;
+}
+
+.container
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap:10px; 
+}
+
+.images_container
+{
+    width:15%;
+    object-fit: cover;
+    border-radius:20px;
+    opacity: 0.5;
+    transition:opacity 0.5s
+
+}
+.images_container:hover
+{
+    opacity: 1;
+
+}
+
+#cona
+{
+   display: none;
+   padding :10px;
+
+}
+
+#cotainer
+{
+  cursor: pointer;
+   padding: 5px;
+   text-align: center;
+}
+
+
+/*  */
+
+
+
+
+/*about */
+
+#about{
+
+  background-color: rgb(241, 226, 226);
+
+}
+
+/** contact **/
+
+#contact
+{
+  background-color: rgb(241, 226, 226);
+}
+
+/**LOGIN **/
+.form-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+label {
+  color: #fff;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.input-main {
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  background-color: #fff;
+  color: #333;
+  text-align: center;
+}
+
+.input-main:focus {
+  outline: none;
+  border-color: #4CAF50;
+}
+
+button[type="submit"] {
+  padding: 12px;
+  width: 100%;
+  background-color: #7e817e;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #090909;
+}
+
+.new-options ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.new-options ul li {
+  color: #fff;
+  font-size: 18px;
+}
+
+.new-options ul li a {
+  color: #fdfbfb;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.new-options ul li a:hover {
+  text-decoration: underline;
+}
+/**Contact **/
+
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons a {
+  font-size: 15px;
+  margin-right: 15px;
+  color: #000;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #2196f3; 
+}
+.fa-phone-alt
+{
+  color: black;
+}
+
+.fa-store {
+  font-size: 24px; 
+}
+/**error message **/
+.error_message
+{
+  border-radius: 20px;
+  padding :10px;
+  background-color: rgba(243, 155, 155, 0.823);
+}
+
+/**explore button **/
+
+.explore-btn{
+  margin-top: 20px;
+  padding:15px;
+  color:white;
+  background-color: #333;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.explore-btn a{
+  text-decoration: none;
+  color: white;
+}
+
+
+
+/** form Catgeoris **/
+
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+.container-entry {
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 40px;
+  width: 100%;
+  max-width: 700px;
+}
+
+.cont-cat h3 {
+  font-size: 1.6rem;
+  color: #333;
+  margin: 10px 0;
+}
+
+.cont-cat p {
+  font-size: 1.1rem;
+  color: #666;
+  margin: 5px 0;
+}
+
+.form-categories {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.form-categories label {
+  font-size: 1.1rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.input-main-cat {
+  padding: 12px;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-main-cat:focus {
+  border-color: #4CAF50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.4);
+}
+
+button {
+  padding: 12px 20px;
+  font-size: 1.1rem;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+textarea.input-main-cat {
+  resize: vertical;
+  min-height: 100px;
+}
+
+form .form-categories button[type="submit"]:last-child {
+  background-color: #f44336;
+}
+
+form .form-categories button[type="submit"]:last-child:hover {
+  background-color: #d32f2f;
+}
+
+
+/**rooms **/
+
+
+.rooms-container
+{
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  text-align: center;
+  gap:20px;
+}
+
+
+.container-r
+{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  width:30%;
+  height: 500px;
+  position: relative;
+  opacity: 0;
+  animation: fadeInUp 0.5s forwards;
+  
+  
+}
+
+.img-container
+{
+  position: absolute;
+  bottom:50px;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  transform: translateY(-50px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+   color: rgb(11, 11, 11);
+   padding: 5px;
+   font-weight: 300;
+}
+
+.container-r:hover .img-container {
+  opacity: 1;
+  transform: translateY(0); 
+}
+.container-r:hover .images {
+  opacity: 0.3; 
+}
+
+
+.images
+{
+  border-radius:20px;
+    width:100%;
+    height: 80%;
+    object-fit: cover;
+    opacity: 1; 
+  transition: opacity 0.5s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.main-info
+{
+  background-color: #575d58;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.info-container p
+{
+  text-align: center;
+  font-weight: 20px;
+  padding: 10px;;
+  
+
+}
+
+.form-group
+{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 10px;
+}
+
+.form-group input,
+.form-group select
+{
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px 20px;
+
+}
+
+.form-group label
+{
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 15px;
+
+}
+
+.form-group-add{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+background-color: #b7afaf;
+text-align: center;
+
+}
+.form-group
+{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 10px;
+}
+
+.form-group input,
+.form-group select
+{
+  border-radius: 10px;
+  padding: 10px 20px;
+
+}
+
+.form-group label
+{
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 15px;
+
+}
+
+
+.home2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  background-color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+.back-homepage {
+  text-align: center;
+}
+
+/* Style for the button */
+.back-homepage a button {
+  background-color: #4CAF50; 
+  color: white; 
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.back-homepage a button:hover {
+  background-color: #45a049; 
+}
+
+.add-btn
+{
+  margin-top: 10px;
+  
+}
